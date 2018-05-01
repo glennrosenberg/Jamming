@@ -1,5 +1,6 @@
 
-const spotifyRedirectUri = "http://localhost:3000/";
+//const spotifyRedirectUri = "http://localhost:3000/";
+const spotifyRedirectUri = "http://glenn-jammming.surge.sh/";
 const spotifyClientId = "940628e8771549a38eb223a1c4039d7e";
 // const spotifyClientSecret = "f81337208b8745299d26abf827a8de36";
 const spotifyAuthUrl = `https://accounts.spotify.com/authorize?client_id=${spotifyClientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${spotifyRedirectUri}`;

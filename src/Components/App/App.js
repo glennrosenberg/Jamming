@@ -50,13 +50,12 @@ class App extends React.Component {
 
   updatePlaylistName(name) {
     this.setState({ playlistName: name });
-    // console.log(this.state.playlistName);
   }
 
   savePlaylist() {
     const trackURIs = this.state.playlistTracks.map(track => track.uri);
     Spotify.savePlaylist(this.state.playlistName, trackURIs);
-    this.setState({ playListName: "New Playlist", playlistTracks: [] });
+    this.setState({ playlistTracks: [] });
   }
 
   termChange(searchTerm) {
@@ -79,7 +78,8 @@ class App extends React.Component {
             <SearchResults searchResults={this.state.searchResults}
               onAdd={this.addTrack}
             />
-            <Playlist playlistName={this.state.playlistName}
+            <Playlist
+              playlistName={this.state.playlistName}
               playlistTracks={this.state.playlistTracks}
               onRemove={this.removeTrack}
               onNameChange={this.updatePlaylistName}

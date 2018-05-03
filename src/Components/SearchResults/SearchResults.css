@@ -7,6 +7,34 @@
   box-shadow: 0 4px 2px 2px #000000;
 }
 
+div.pageNav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0px;
+}
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+  border-right: 0px solid transparent;
+	border-bottom: 25px solid transparent;
+  border-left: 50px solid rgba(108, 65, 233, 0.7);
+  padding: 0;
+  background-color: transparent;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid rgba(108, 65, 233, 0.7);
+  border-bottom: 25px solid transparent;
+  border-left: 0px solid transparent;
+  padding: 0;
+  background-color: transparent;
+}
+
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
